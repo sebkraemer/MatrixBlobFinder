@@ -14,3 +14,4 @@ IncludeCategories:
     Priority:         1
 IncludeIsMainRegex:  '$'
 SortIncludes:         true
+BreakBeforeBraces:    Allman

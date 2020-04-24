@@ -1,4 +1,6 @@
-add_executable(matrix_blob_finder main.cpp)
+add_subdirectory(matrixblobfinder)
+
+add_executable(demo main.cpp)
 target_link_libraries(
-  matrix_blob_finder PRIVATE project_options project_warnings
-                CONAN_PKG::fmt CONAN_PKG::spdlog)
+  demo PRIVATE matrixblobfinder project_options project_warnings
+  )
