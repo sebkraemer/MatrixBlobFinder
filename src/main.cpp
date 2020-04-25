@@ -1,7 +1,8 @@
 #include "matrix.hpp"
 #include "matrixblobfinder.hpp"
 
-namespace {
+namespace
+{
 // clang-format off
   // Matrix testMatrix{ 6, 3, {
   //   0, 0, 1, 1, 0, 0,
@@ -20,12 +21,16 @@ namespace {
 // clang-format on
 }  // namespace
 
-int main(int, const char **) {
-    auto const blob = getLargestBlob(findBlobs(testMatrix));
+int main(int, const char **)
+{
+    std::cout << "Input:\n" << testMatrix << '\n';
 
+    auto const blob = getLargestBlob(findBlobs(testMatrix));
     std::vector<int> shape(testMatrix.getValues().size());
-    for(auto const idx : blob){
-      shape[idx] = 1;
+    for (auto const idx : blob)
+    {
+        shape[idx] = 1;
     }
-    std::cout << Matrix(7, 5, shape);
+
+    std::cout << "Output:\n" << Matrix(7, 5, shape);
 }
