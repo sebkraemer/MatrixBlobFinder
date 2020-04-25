@@ -19,3 +19,21 @@ int Matrix::getNumCols() const{
 int Matrix::getNumRows() const {
     return rows_;
 }
+
+std::ostream& operator <<(std::ostream &os, Matrix const& matrix)
+{
+    auto const& values = matrix.getValues();
+    for (int r = 0, idx = 0; r < matrix.getNumRows(); ++r)
+    {
+        int c = 0;
+        for (; c < matrix.getNumCols(); ++c, ++idx)
+        {
+            os << ' ' << values[r*matrix.getNumCols()+c];
+        }
+        if(c == matrix.getNumCols())
+        {
+            os << '\n';
+        }
+    }
+    return os;
+}

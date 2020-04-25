@@ -22,4 +22,10 @@ namespace {
 
 int main(int, const char **) {
     auto const blob = getLargestBlob(findBlobs(testMatrix));
+
+    std::vector<int> shape(testMatrix.getValues().size());
+    for(auto const idx : blob){
+      shape[idx] = 1;
+    }
+    std::cout << Matrix(7, 5, shape);
 }

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 #include <vector>
 
 class Matrix {
@@ -10,6 +11,8 @@ public:
     std::vector<int> const& getValues() const;
     int getNumCols() const;
     int getNumRows() const;
+
+    friend std::ostream& operator <<(std::ostream &os, Matrix const& matrix);
 
 private:
     int const cols_;

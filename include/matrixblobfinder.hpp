@@ -7,8 +7,8 @@
 #include <set>
 #include <vector>
 
-using Blob_t = std::set<int>;
-using IndexType = std::vector<std::vector<int>>::size_type;
+using IndexType = std::vector<int>::size_type;
+using Blob_t = std::set<IndexType>;
 
 struct Point
 {
