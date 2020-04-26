@@ -2,7 +2,7 @@
 
 #include <stdexcept>
 
-Matrix::Matrix(int cols, int rows, std::vector<int> values) : cols_(cols), rows_(rows), values_(values) {
+Matrix::Matrix(int rows, int cols, std::vector<int> values) : rows_(rows), cols_(cols), values_(values) {
     if (cols * rows != values.size()) {
         throw std::runtime_error("invalid number of matrix values given");
     }

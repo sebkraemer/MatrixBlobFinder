@@ -4,13 +4,13 @@
 namespace
 {
 // clang-format off
-  // Matrix testMatrix{ 6, 3, {
+  // Matrix testMatrix{ 3, 6 {
   //   0, 0, 1, 1, 0, 0,
   //   0, 1, 0, 1, 0, 0,
   //   0, 0, 0, 0, 0, 1 }
   //   };
 
-  Matrix testMatrix{ 7, 5, {
+  Matrix testMatrix{ 5, 7, {
     0, 0, 0, 1, 0, 0, 0,
     0, 1, 0, 1, 1, 1, 0,
     1, 1, 0, 1, 1, 0, 0,
