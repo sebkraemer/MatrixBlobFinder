@@ -2,13 +2,19 @@
 
 Finds largest connected shape in a matrix.
 
-It's implmentation is based on labelling algorithm known from computer vision.
+Its implmentation is based on labelling algorithm known from computer vision.
+
+"Interesting" files:
+* `src/matrixblobfinder/matrixblobfinder.cpp`
+* `src/main.cpp`
+* `tests/main.cpp`
+* `build/test/test.log`
 
 # To see it in action
 
-Before running cmake, make sure `conan` inst installed:  `pip install conan` 
+Before running cmake, make sure `conan` is installed:  `pip install conan` 
 
-Build with cmake as usual, then  run `build/bin/demo`.
+Build with cmake as usual, then  run `build/bin/demo` or `ctest` inside the build directory.
 
 
 # CI status
