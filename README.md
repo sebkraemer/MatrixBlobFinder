@@ -2,7 +2,22 @@
 
 Finds largest connected shape in a matrix.
 
-Its implmentation is based on labelling algorithm known from computer vision.
+Given a matrix of (m x n), containing values of 0 and 1, determines the largest
+shape that contains entirely values of 1. The shape must not intersect other
+shapes, so all contour lines must be surrounded by 0 values.
+
+Example matrix:
+
+```0 0 0 1 0 0 0
+0 1 0 1 1 1 0
+1 1 0 1 1 0 0
+0 0 0 0 0 0 1
+0 0 0 0 1 1 1
+```
+
+Here the top right shape is the largest one, containing the most values of 1.
+
+The implmentation is based on labelling algorithm known from computer vision.
 
 "Interesting" files:
 * `src/matrixblobfinder/matrixblobfinder.cpp`
