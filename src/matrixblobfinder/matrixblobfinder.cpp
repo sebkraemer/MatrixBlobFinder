@@ -25,9 +25,6 @@ std::vector<Blob_t> findBlobs(Matrix const& inputMatrix)
 
     for (IndexType row = 0, idx = 0; row < inputMatrix.getNumRows(); ++row)
     {
-        if (row == 0)
-        {
-        }
         for (IndexType col = 0; col < inputMatrix.getNumCols(); ++col, ++idx)
         {
             // transfer matrix input values to vector (todo: maybe get rid of other matrix..)
